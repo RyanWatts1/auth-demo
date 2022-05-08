@@ -8,22 +8,16 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-export default function Login() {
+export default function ChangePassword() {
   const navigate = useNavigate();
   return (
     <Card>
-      <Typography variant="h5">Sign in</Typography>
+      <Typography variant="h5">Forgot Password?</Typography>
       <TextField label="Email" type="email" />
-      <TextField label="Password" type="password" />
-      <Button variant="contained">Login</Button>
+      <Button variant="contained">Send email</Button>
       <Typography align="center">
-        Don't have an account?{" "}
-        <Link onClick={() => navigate("/register")}>Register </Link>{" "}
-      </Typography>
-      <Typography align="center">
-        <Link onClick={() => navigate("/change-password")}>
-          Forgot Password
-        </Link>
+       Back to {" "}
+        <Link onClick={() => navigate("/")}>Login </Link>{" "}
       </Typography>
     </Card>
   );
