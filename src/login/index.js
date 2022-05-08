@@ -13,11 +13,10 @@ export default function Login() {
   return (
     <Card>
       <Typography variant="h5">Sign in</Typography>
-      <TextField label="Username" />
+      <TextField label="Email" type="email" />
       <TextField label="Password" type="password" />
       <Button variant="contained">Login</Button>
       <Typography align="center">
-        {" "}
         Don't have an account?{" "}
         <Link onClick={() => navigate("/register")}>Register </Link>{" "}
       </Typography>
