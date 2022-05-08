@@ -14,13 +14,13 @@ export default function Signup() {
   return (
     <Card>
       <Typography variant="h5">Signup</Typography>
-      <TextField label="Username" />
+      <TextField label="Email" type="email" />
       <TextField label="Password" type="password" />
       <TextField label="Confirm Password" type="password" />
       <Button variant="contained">Create Account</Button>
       <Typography align="center">
-        {" "}
-        Already have an account? <Link onClick={() => navigate("/")}>Login </Link>{" "}
+        Already have an account?{" "}
+        <Link onClick={() => navigate("/")}>Login </Link>{" "}
       </Typography>
     </Card>
   );
